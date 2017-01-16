@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtnl" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> Курс по Javascript</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+//Регулярные выражения
+//Свойства и методы объекта string (работа со строками)
+var forSeting = "8 пингвинов и 9 карасей ";
+function fun (newScript) {
+	var	regV = /^\d{1}/
+	if (newScript.search(regV) == -1) {
+	document.write("Эта переменная не начинается с цыфры");
+	
+}
+else {
+	document.write("Эта переменная начинается с цыфры");
+}
+
+
+
+}
+fun (forSeting);
+
+
+</script>
+</div>
+
+
+</body>
+</html>

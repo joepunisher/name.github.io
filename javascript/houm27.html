@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtnl" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> Курс по Javascript</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+//объект Date 
+var vopros = prompt ("Ввод числа :");
+function fun (slovo) {
+
+if (slovo >= 1 && slovo <= 1000) {
+var now = new Date();
+
+now = new Date(now.getTime() + (slovo * 24 * 60 * 60 * 1000))
+
+
+var day1= ["Понидельник","Вторник",'Среда','Четверьг','Пятница','Субота','Воскресенье'];
+ month = now.getMonth();
+ var year = now.getFullYear();
+ var day = now.getDate();
+var month = ["Январь","Февраль","Март","Апперль","Май","Июнь","Июль","Август","Сентябрь","Октябръ",'Ноябръ','Декабрь'];
+
+
+	document.write("Через " + slovo + " дней будет вот такая дата : " + "<br />");
+	document.write(" День недели : " + day1[now.getDay() + -1]  + "<br />");
+	document.write("Число : " + day + "<br />");
+	document.write("Месяц  : " + month[now.getMonth() + -1] + "<br />");
+	document.write("Год : " + year + "<br />");
+
+}
+else {
+	document.write("Ошибка ! Введите другое число меньше от 1 до 1000");
+}
+}
+fun (vopros);
+</script>
+</div>

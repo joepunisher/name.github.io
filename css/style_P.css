@@ -1,0 +1,52 @@
+@import  url("ps.css");
+
+body{
+background-color:#d2d2d2;
+font:11px Verdana #cccccc;
+}
+#wrapper{
+background-color:#f4f4f4;
+outline:0;
+width:650px;
+margin:30px auto;
+}
+#header{
+height:75px;
+background-color:#DEC000;
+background-image:url(../images/redHeader.png);
+position:relative;
+}
+#content{
+padding:20px 30px;
+}
+#new{
+position:absolute;
+left:0;
+top:0;
+}
+#button{
+position:absolute;
+left:294px;
+top:-14px;
+}
+#bird{
+position:absolute;
+left:272px;
+top:-1px;
+z-index:2;
+}
+#operator{
+position:fixed;
+width:22px;
+height:180px;
+left:0;
+top:250px;
+z-index:1;
+}
+#test{
+visibility:hidden;
+display:none;
+}
+#top{
+padding:inherit;
+}

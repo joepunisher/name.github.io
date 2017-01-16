@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtnl" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> Курс по Javascript</title>
+</head>
+<body>
+<div> 
+<script type="text/javascript">
+//объект Date
+var now = new Date();
+	
+
+var from1970 = ( now.getTime() /( 1000 * 60 * 60 * 24) );
+	
+	
+var ny = new Date(2016,0,1,0,0,0); 
+var from970 = (ny.getTime() / (1000 * 60 * 60 * 24));
+	document.write("До нового года осталось " + (Math.round(from970) - Math.round(from1970)) + "<br />");
+var day1 = ["Понидельник","Вторник",'Среда','Четверьг','Пятница','Субота','Воскресенье'];
+	document.write("Это будет день нидели : " + day1[ny.getDay() + -1] + "<br />");
+var test = new Date (1000 * 60 * 60 * 24);
+	document.write(test);
+
+
+</script>
+</div>

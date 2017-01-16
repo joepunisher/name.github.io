@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtnl" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> Курс по Javascript</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+//объект Math
+var numberArrey = [34.82, 12.90, 17.01, 78.51];
+function fun (russel,Method) { 
+
+for (var i = 0 ; i < russel.length ; i++) {
+	if (Method == "round") {
+	document.write(Math.round(russel[i])+ " ");
+	}
+else if (Method =="ceil") {
+	document.write(numberArrey[i]);
+}
+else if (Method == "floor") {
+	document.write(numberArrey[i]);
+}
+}
+
+}
+fun (numberArrey,"floor") ;
+
+</script>
+</div>

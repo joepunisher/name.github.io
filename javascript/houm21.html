@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtnl" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> Курс по Javascript</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+//isNaN() - это не число ?
+function fun (nan) {
+var randSimbol = ["Масло",9,7,"Сметана",-88];
+	for (var i = 0; i < randSimbol.length ;i++){
+		if (isNaN(randSimbol[i])) {
+	document.write("Этот элемент масива " + randSimbol[i] + " Это не число!" + "<br />");
+}
+		else {
+	document.write("Этот элемент масива " + randSimbol[i] + " это число! "+ "<br />");
+}
+}
+
+}
+fun ();
+
+</script>
+</div>

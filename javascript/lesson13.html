@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtnl" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> Курс по Javascript</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+var days = ["Понедельник","Вторник","Среда","Четверьг","Пятница","Субота","Воскресение"];
+var count = days.length;
+document.write("Количество элементов : " +count + "<br ./>");
+
+
+
+var students = ["Бодька Количество","Артур Фокша","Антон Семен","Ален Мантула"];
+//Добавления в конец имени
+students.push("Скрепка Андреев");
+document.write("Количество элементов : " + students[4] + "<br />");
+
+//Добавления в начало имени
+students.unshift("Петрова Аня");
+document.write("Первый студент . " + students[0] + "<br />");
+
+/*Удаление последнего студета*/
+students.pop();
+document.write("Удаление последнего студента . " + students[students.length -1] + "<br />");
+/*Удаление первого студента*/
+students.shift();
+document.write("Первый студент - " + students[0]);
+</script>
+</div>
+
+
+</body>
+</html>

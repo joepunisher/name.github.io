@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtnl" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> Курс по Javascript</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+//Многомерные массивы
+var students = ["Бодька Количество","Артур Фокша","Антон Семен"];
+var students2 = ["Ален Мантула","Петрова Аня","Юля Васина"];
+var students3 = ["Анжел Пакина","Окси Андреева","Ананас Бананова"];
+var myCollege = [students + students2 + students3];
+document.write(myCollege[1][1] + "<br />");
+
+var planet = ["Украина","Польша","Дания"];
+var planet2 = ["Лондон","Париж","Амстердам"];
+var planet3 = ["Венеция","Испания","Нидерланды"];
+var gorod = ["Germani" + planet + planet2 + planet3];
+document.write(gorod[2][1]);
+
+</script>
+</div>
+
+
+</body>
+</html>
